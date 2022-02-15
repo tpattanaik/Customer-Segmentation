@@ -114,6 +114,21 @@ After doing the RFM Analysis, we got following insights:
 Looking at this heatmap, we see that there is a negative correlation between Recency : Frequency and
 Recency : Monetary, but there is a positive correlation between Frequency : Monetary
 
+**K- Means Clustering**
+
+The K-means clustering belongs to the partition based\centroid based hard clustering family of algorithms, a family of algorithms where each sample in a dataset is assigned to exactly one cluster.
+Based on this Euclidean distance metric, we can describe the k-means algorithm as a simple optimization problem, an iterative approach for minimizing the within-cluster sum of squared errors (SSE), which is sometimes also called cluster inertia. So, the objective of K-Means clustering is to minimize total intra-cluster variance, or, the squared error function.
+
+The steps that happen in the K-means algorithm for partitioning the data are as given follows:
+
+1. The algorithm starts with random point initializations of the required number of centers. The “K” in K-means stands for the number of clusters.
+
+2. In the next step, each of the data point is assigned to the center closest to it. The distance metric used in K-means clustering is normal Euclidian distance.
+
+3. Once the data points are assigned, the centers are recalculated by averaging the dimensions of the points belonging to the cluster.
+
+4. The process is repeated with new centers until we reach a point where the assignments become stable. In this case, the algorithm terminates.
+
 Then we used **K-Means clustering** implementation and we got the best Silhouette score obtained is when
 there are 2 clusters.
 
