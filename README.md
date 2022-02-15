@@ -88,3 +88,39 @@ Number of products bought: 4065
 
 Number of customers: 7587
 
+# Models:
+
+We started with RFM Analysis and then compliment our findings with predictive analysis using K-Means
+Clustering Algorithms.
+The simplest way to create customer segments from an RFM model is by using Quartiles. We will assign a
+score from 1 to 4 to each category (Recency, Frequency, and Monetary) with 4 being the highest/best
+value. The final RFM score is calculated by combining the individual RFM values.
+A score of 4 represents the customer being in the 75th percentile for that category.
+After doing the RFM Analysis, we got following insights:
+
+1. Best customers: 370
+
+2. Loyal customers: 791
+
+3. Big spenders: 980
+
+4. Almost lost: 65
+
+5. Lost customers: 11
+
+6. Lost cheap customers: 377
+
+**Correlation analysis:**
+Looking at this heatmap, we see that there is a negative correlation between Recency : Frequency and
+Recency : Monetary, but there is a positive correlation between Frequency : Monetary
+
+Then we used **K-Means clustering** implementation and we got the best Silhouette score obtained is when
+there are 2 clusters.
+
+# Conclusion:
+
+We were able to build a model that can classify new customers into "low value" and "high value" groups. Generally, if a customer only transacted with us a few times, they needed to be at least in the top 50th percentile in monetary spending to be considered a "high value customer". The clusters assignments are muddled, which may be due to outliers that weren't removed.
+
+
+
+
