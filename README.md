@@ -79,8 +79,12 @@ total cost should look similar.
 7. The UK not only has the most sales revenue, but also the most customers. Since the majority of this data
 set contains orders from the UK, we can explore the UK market further by finding out what products the
 customers buy together and any other buying behaviors to improve our sales and targeting strategy.
+
 Percentage of customers from UK: 93.88%
+
 Number of transactions: 23494
+
 Number of products bought: 4065
+
 Number of customers: 7587
 
